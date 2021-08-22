@@ -1,0 +1,114 @@
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+#proj_down, #Contact_me{
+    transform: scale(0.2);
+    transition: transform 0.5s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navbar{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card, .carousel-inner{
+    border: none;
+    width: 40rem; 
+    height: auto;
+    border-radius: 10px;
+}
+
+#Login{
+    margin-right: 2%;
+}
+#Login_instead{
+    margin-right: -30%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#carousel_id_card{
+    display: flex;
+    flex-direction: row;
+}
+
+.relative {
+    position: relative;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    width: 40rem;
+    height: fit-content;
+    margin-left: 5%;
+    margin-top: 8px;
+    border: 3px solid #73AD21;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+    background-image: linear-gradient(to bottom right, khaki, rgb(38, 220, 252), rgb(174, 38, 252));
+}
+.heads{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+}
+.heads a{
+    font-size: 25px;
+}
+.heads a:visited, .heads a:link{
+    color: black;
+}
+.heads a:hover{
+    text-decoration: underline;
+}
+.sun{
+    margin-top: 20px;
+    margin-left: -3px;
+    width: 75%;
+    height: 50%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+ .bloc{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+@media screen and (max-width: 1500px){
+    .relative{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 1270px){
+    .relative{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #carousel_id_card{
+        flex-direction: column;
+    }
+    .relative{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .card{
+        width: 97%;
+        height: auto;
+    }
+    .carousel-inner{
+        width: 100%;
+    }
+}
